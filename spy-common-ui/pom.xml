@@ -20,6 +20,7 @@
 		<maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
 		<maven.compiler.source>22</maven.compiler.source>
 		<maven.compiler.target>22</maven.compiler.target>
+		<javafx.version>22.0.2</javafx.version>
 		
 		<jaxb2.plugin.version>0.15.3</jaxb2.plugin.version>
 		<jaxb2.basics.version>1.11.1</jaxb2.basics.version>
@@ -41,7 +42,24 @@
 			<groupId>org.eclipse.paho.mqttspy</groupId>
 			<artifactId>spy-common</artifactId>
 			<version>1.0.1</version>
-		</dependency>	
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-swing</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
 		
 		<!--=== Other === -->
 				

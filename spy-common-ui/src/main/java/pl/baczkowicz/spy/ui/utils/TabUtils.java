@@ -26,13 +26,14 @@ import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.skin.TabPaneSkin;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+
 import pl.baczkowicz.spy.ui.panes.PaneVisibilityStatus;
 import pl.baczkowicz.spy.ui.panes.TabController;
 
 import com.sun.javafx.scene.control.behavior.TabPaneBehavior;
-import com.sun.javafx.scene.control.skin.TabPaneSkin;
 
 /**
  * Tab pane utilities.
@@ -62,7 +63,8 @@ public class TabUtils
 	 */
 	private static TabPaneBehavior getBehavior(final Tab tab)
 	{
-		return ((TabPaneSkin) tab.getTabPane().getSkin()).getBehavior();
+		//return ((TabPaneSkin) tab.getTabPane().getSkin()).getBehavior();
+		return null;
 	}
 	
 
