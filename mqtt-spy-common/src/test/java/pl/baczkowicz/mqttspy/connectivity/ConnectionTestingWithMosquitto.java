@@ -348,7 +348,7 @@ public class ConnectionTestingWithMosquitto
 	@Test
 	public void testServerOnlyAuthenticationWithLiveEclipseServer() throws SpyException, InterruptedException
 	{				
-		testServerOnlyAuthentication("ssl://iot.eclipse.org", "/certificates/certificate_authority_files/iot.eclipse.org.crt");
+		testServerOnlyAuthentication("ssl://mqtt.eclipseprojects.io", "/certificates/certificate_authority_files/mqtt.eclipseprojects.io.crt");
 	}
 	
 	private void testServerOnlyAuthentication(final String server, final String certificateAuthorityFile) 

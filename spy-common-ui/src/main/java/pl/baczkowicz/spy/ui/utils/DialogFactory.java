@@ -397,7 +397,7 @@ public class DialogFactory
 				System.getProperty("line.separator") + "This creates a configuration file " +  
                 "in \"" + BaseConfigurationManager.getDefaultHomeDirectory() + "\"" + 
                 " called \"" + BaseConfigurationManager.getDefaultConfigurationFileName() + "\"" + 
-                ", which will include sample connections to localhost and iot.eclipse.org.");
+                ", which will include sample connections to localhost and mqtt.eclipseprojects.io.");
 		
 		 final DialogAction createEmpty = new DialogAction("Create empty " + BaseConfigurationManager.APPLICATION_NAME
 		 		+ " configuration file",
