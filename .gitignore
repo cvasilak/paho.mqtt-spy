@@ -21,3 +21,6 @@ bin/
 *.jar
 *.war
 *.ear
+
+# BuildNumber files
+buildNumber.properties
