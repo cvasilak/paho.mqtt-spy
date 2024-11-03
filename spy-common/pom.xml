@@ -19,8 +19,8 @@
 
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
-		<maven.compiler.source>22</maven.compiler.source>
-		<maven.compiler.target>22</maven.compiler.target>
+		<maven.compiler.source>23</maven.compiler.source>
+		<maven.compiler.target>23</maven.compiler.target>
 		
 		<jaxb.version>2.3.0</jaxb.version>
 		<jaxb2.plugin.version>0.15.3</jaxb2.plugin.version>
