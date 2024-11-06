@@ -26,6 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
+import java.util.function.Predicate;
 
 import javax.script.Bindings;
 import javax.script.Invocable;
@@ -294,8 +295,12 @@ public abstract class BaseScriptManager implements BaseScriptManagerInterface
 	{
 		try
 		{
-			final ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName("nashorn");										
-			
+			final ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName("graal.js");
+
+			// allow Nashorn compatibility mode
+			Bindings bindings = scriptEngine.getBindings(ScriptContext.ENGINE_SCOPE);
+			bindings.put("polyglot.js.nashorn-compat", true);
+
 			if (scriptEngine != null)
 			{
 				script.setName(scriptName);			

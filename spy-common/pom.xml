@@ -21,10 +21,12 @@
 		<maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
 		<maven.compiler.source>23</maven.compiler.source>
 		<maven.compiler.target>23</maven.compiler.target>
-		
+
 		<jaxb.version>2.3.0</jaxb.version>
 		<jaxb2.plugin.version>0.15.3</jaxb2.plugin.version>
 		<jaxb2.basics.version>1.11.1</jaxb2.basics.version>
+
+		<graalvm.version>24.1.1</graalvm.version>
 	</properties>
 	
 	<dependencies>
@@ -123,8 +125,28 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
-		</dependency>	
-		
+		</dependency>
+
+		<!--=== GRAALVM JS === -->
+
+		<dependency>
+			<groupId>org.graalvm.polyglot</groupId>
+			<artifactId>polyglot</artifactId>
+			<version>${graalvm.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graalvm.polyglot</groupId>
+			<artifactId>js</artifactId>
+			<version>${graalvm.version}</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.graalvm.js</groupId>
+			<artifactId>js-scriptengine</artifactId>
+			<version>${graalvm.version}</version>
+		</dependency>
+
 		<!--=== TEST === -->
 	
 		<dependency>
